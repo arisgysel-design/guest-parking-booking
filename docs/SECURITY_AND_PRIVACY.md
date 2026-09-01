@@ -1,5 +1,8 @@
 # Sicherheit und Datenschutz
 
+> Sicherheitsvertrag für die weitere Implementierung und den späteren Livebetrieb.
+> Der aktuelle Funktionsstand steht in [CURRENT_STATE.md](CURRENT_STATE.md).
+
 ## Zahlungsdaten
 
 - Ausschließlich Stripe Checkout verwenden; keine Kartendaten verarbeiten oder speichern.

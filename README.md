@@ -8,6 +8,15 @@ nachvollziehbare Stornierung auslösen.
 > interaktiven Frontend-Prototyp. Echte Buchungen, Stripe-Zahlungen und
 > E-Mail-Versand sind bewusst noch nicht aktiviert.
 
+## Einstieg für neue Entwickler
+
+1. [Codex- und Repository-Regeln](AGENTS.md) lesen.
+2. [Aktuellen Implementierungsstand](docs/CURRENT_STATE.md) lesen.
+3. Mit der [klar abgegrenzten Starter-Aufgabe](docs/NEXT_TASK.md) beginnen.
+
+[Codex lädt `AGENTS.md` beim Start aus dem Repository](https://developers.openai.com/codex/guides/agents-md).
+Eine neue Codex-Sitzung daher im Repository-Root starten.
+
 ## Funktionsumfang
 
 - Kalenderauswahl mit halb-offenen Zeiträumen (Anreise inklusive, Abreise exklusive)
@@ -19,7 +28,8 @@ nachvollziehbare Stornierung auslösen.
 
 ## Lokale Entwicklung
 
-Voraussetzungen: Node.js 22.13 oder neuer und npm.
+Voraussetzungen: Node.js 22.13 oder neuer und npm. `.node-version` fixiert die
+verifizierte lokale Version für kompatible Versionsmanager.
 
 ```bash
 npm ci
@@ -33,10 +43,11 @@ Frontend-Prototyp werden noch keine Stripe-Schlüssel benötigt.
 ## Qualitätsprüfungen
 
 ```bash
-npm run check
-npm run test:coverage
-npm run build
+npm run verify
 ```
+
+Dieser eine Befehl entspricht dem verpflichtenden lokalen und CI-Gate: Format,
+Lint, Typen, Tests mit Coverage, Build und Produktions-Abhängigkeitsprüfung.
 
 ## Dokumentation
 
@@ -46,6 +57,18 @@ npm run build
 - [Sicherheit und Datenschutz](docs/SECURITY_AND_PRIVACY.md)
 - [Betrieb](docs/OPERATIONS.md)
 - [Mitwirken](CONTRIBUTING.md)
+
+## Veröffentlichung
+
+Der vorgesehene Cloudflare-Pfad ist `https://parking.justsunny.ch`. Es existieren
+noch kein DNS-Eintrag und kein Live-Deployment.
+
+## Lizenzstatus
+
+Dieses öffentliche Repository besitzt derzeit keine Open-Source-Lizenz. Öffentliche
+Sichtbarkeit erlaubt Einsicht und Zusammenarbeit per Pull Request, aber keine
+allgemeine Wiederverwendungsfreigabe. Die Lizenzwahl bleibt eine Entscheidung des
+Repository-Inhabers.
 
 ## Wichtige Entscheidung vor dem Livegang
 

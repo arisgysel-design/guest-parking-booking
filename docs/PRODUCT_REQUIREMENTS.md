@@ -1,5 +1,8 @@
 # Produktanforderungen
 
+> Dieses Dokument beschreibt das Zielprodukt. Bereits implementierte und noch
+> fehlende Teile stehen in [CURRENT_STATE.md](CURRENT_STATE.md).
+
 ## Ziel
 
 Gäste sollen ohne Konto in wenigen Minuten einen Parkplatz für einen klaren

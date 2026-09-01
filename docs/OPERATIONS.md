@@ -1,5 +1,8 @@
 # Betrieb
 
+> Zielzustand für den späteren Livebetrieb. Aktuell existiert noch kein Deployment;
+> siehe [CURRENT_STATE.md](CURRENT_STATE.md).
+
 ## Konfiguration
 
 Benötigte Secrets: `STRIPE_SECRET_KEY`, `STRIPE_WEBHOOK_SECRET` und

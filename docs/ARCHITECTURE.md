@@ -1,5 +1,8 @@
 # Architektur
 
+> Dieses Dokument beschreibt die Zielarchitektur. Der verbindliche Ist-Stand steht
+> in [CURRENT_STATE.md](CURRENT_STATE.md).
+
 ## Überblick
 
 Die App nutzt React/Vinext auf Cloudflare Workers. Strukturierte Daten liegen in
