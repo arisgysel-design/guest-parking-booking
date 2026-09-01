@@ -1,0 +1,23 @@
+name: Verbesserung vorschlagen
+description: Klar abgegrenzte Produkt- oder Technikverbesserung
+title: '[Feature] '
+labels: [enhancement]
+body:
+  - type: textarea
+    attributes:
+      label: Problem
+      description: Welches konkrete Problem soll gelöst werden?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Gewünschtes Ergebnis
+      description: Beschreibe beobachtbares Verhalten statt nur die Implementierung.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Abnahmekriterien
+      description: Wann ist die Änderung fertig?
+    validations:
+      required: true

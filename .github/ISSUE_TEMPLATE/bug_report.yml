@@ -1,0 +1,33 @@
+name: Fehler melden
+description: Reproduzierbares Problem in Buchung, Zahlung oder Oberfläche
+title: '[Bug] '
+labels: [bug]
+body:
+  - type: textarea
+    attributes:
+      label: Beschreibung
+      description: Was ist passiert und was wurde erwartet?
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Reproduktion
+      description: Schritte mit Testdaten, niemals echte Gäste- oder Zahlungsdaten.
+    validations:
+      required: true
+  - type: dropdown
+    attributes:
+      label: Bereich
+      options:
+        - Kalender und Verfügbarkeit
+        - Buchung
+        - Zahlung
+        - Stornierung und Erstattung
+        - Oberfläche
+        - Betrieb
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Zusätzlicher Kontext
+      description: Browser, Zeitpunkt, Screenshots ohne personenbezogene Daten.
