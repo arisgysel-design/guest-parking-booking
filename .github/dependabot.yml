@@ -8,6 +8,12 @@ updates:
     ignore:
       - dependency-name: '*'
         update-types: ['version-update:semver-major']
+      # oxlint 1.80 removes the configured react/react-compiler rule. Upgrade only
+      # when an equivalent compiler-safety check is part of the same change.
+      - dependency-name: oxlint
+        update-types:
+          - 'version-update:semver-minor'
+          - 'version-update:semver-patch'
     groups:
       npm-minor-patch:
         update-types: [minor, patch]

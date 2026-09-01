@@ -49,3 +49,11 @@ before planning a change.
 The repository currently has no open-source licence. Public visibility permits
 inspection and pull-request collaboration, but does not grant general reuse rights.
 The owner must choose a licence before describing the project as open source.
+
+## Known development-tool advisory
+
+`npm audit` reports a moderate advisory in a legacy `esbuild` copy pulled only by
+`drizzle-kit`. `npm audit --omit=dev` reports no production vulnerabilities, and
+the current upstream dependency graph has no supported non-breaking fix. Do not use
+`npm audit fix --force`; keep development servers loopback-only and revisit the
+advisory when `drizzle-kit` provides a compatible upgrade path.
